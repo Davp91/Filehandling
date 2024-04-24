@@ -21,17 +21,7 @@ int main() {
         std::cout << "Unable to open file for writing.\n";
     }
 
-    // Read from file
-    std::ifstream file_in(filename);
-    if (file_in.is_open()) {
-        std::cout << "Reading from file:\n";
-        while (getline(file_in, line)) {
-            std::cout << line << '\n';
-        }
-        file_in.close();
-    } else {
-        std::cout << "Unable to open file for reading.\n";
-    }
+
 
     return 0;
 }
